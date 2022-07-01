@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+ }
+#header_search .ant-input{
+width: 140px;
+border-radius: 20px;
+}
+#searchInput{
+  position: absolute;
+  display: flex;
+  top: 16rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+  }
+  #searchInput .ant-input{
+  width: 300px;
+  height: 60px;
+  border: none;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: 30px;
+  display: block;
+  }
+  #searchInput .location{
+      width: 400px;
+      height: 60px;
+  background-color: white;
+  color:black;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  outline: none;
+  }
+  #searchInput .searchButton{
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
+   height: 60px;
+   width: 100px;
+   background-color: white;
+  }
+  .setButton{
+   border-radius: 20px;
+   height: 40px;
+   width: 80px;
+   color: white;
+   font-weight: 500;
+   background: #E60965;
+   position: absolute;
+   top: 10px;
+   right: 15px;
+  }
+  .list_location{
+  width: 450px;
+  height: 300px;
+  display: none;
+  overflow-y: scroll;
+  background-color: white;
+      position: absolute;
+      top: 65px;
+      border-radius: 20px;
+      right:0px ;
+      padding-left: 20px;
+      z-index: 100;
+      transition: all 0.5s ease-in-out;
+  }
+  .downshow_location::after{
+    content: "";
+    width: 350px;
+    height: 12px;
+    position: absolute;
+    right:0px ;
+    bottom: -10px;
+    background-color:transparent;
+  }
+  .downshow_location{
+  width: 350px;
+  height: 140px;
+  background-color: white;
+      position: absolute;
+      bottom: 70px;
+      border-radius: 20px;
+      right:26px ;
+      padding-left: 20px;
+      transition: all 0.5s ease-in-out;
+  }
+  .ant-btn-primary:hover{
+      background: none!important;
+  }
+  .ant-select:not(.ant-select-disabled):hover .ant-select-selector{
+      border-color: transparent!important;
+      border-right-width: none!important;
+  }
+  a{
+      color: black!important;
+      font-weight: 400!important;
+      font-size: 16px;
+  
+  }
+  .footer_air{
+    transition: all 0.5s ease-in-out;
+    position: relative;
+  }
+  .footer_air:hover a{
+    color:#e60965
+  }
+  .footer_air:hover::after{
+    width: 100%;
+  }
+  .footer_air::after{
+content: "";
+display: block;
+border-radius: 20px;
+width: 0px;
+height:5px;
+background-color: #E60965;
+position: absolute;
+top: 25px;
+left: 0px;
+transition: all 0.5s ease-in-out;
+  }
+  /* Modal-DetailRoom */
+  .ant-modal-content{
+    border-radius: 20px!important;
+    overflow: hidden;
+  }
+  .ant-btn-primary {
+    border-radius: 10px!important;
+    background-color: #ec4899!important;
+    border-color: #ec4899!important;
+    transition: all 0.5s ease-in-out !important;
+  }
+  
+  .ant-btn-primary:hover{
+    border: none !important;
+    background-color: #ec4899!important;
+    opacity: 500;
+  }
+  .ant-btn {
+    border: 1px solid #ec4899!important;
+    border-radius: 20px !important;
+  }
+  .ant-btn:hover{
+    color: #ec4899!important
+  }
+  .ant-picker{
+    border-radius: 20px!important;
+  }
+  .ant-picker:hover{
+    border: 1px solid #ec4899 !important
+  }
+  .ant-picker-focused{
+    border-color: #ec4899 !important;
+    box-shadow: 0 0 0 2px rgb(236 72 153 / 20%)!important;
+  }
+  .ant-picker-suffix{
+    color: #ec4899!important;
+  }
+  .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before{
+    border:1px solid #ec4899 !important;
+  }
+  .ant-picker-input > input{
+    color: #ec4899 !important;
+  }
+  .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner{
+    background-color: #ec4899 !important;
+  }
+  /* Css slick (home detail component) */
+  .slick-dots{
+      display: none!important;
+  }
+  .slick-dots li button:before{
+      font-size: 16px!important;
+  }
+  .slick-dots li.slick-active button:before{
+      color: orange!important;
+  }
+    #components-layout-demo-custom-trigger .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    
+    #components-layout-demo-custom-trigger .trigger:hover {
+      color: #1890ff;
+    }
+    
+    #components-layout-demo-custom-trigger .logo {
+      height: 50px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 20px;
+    }
+    /* ------------------------//////---------------------------- */
+    @media (max-width: 640px){
+      #searchInput{
+        display: block;
+        top: 5.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #searchInput .ant-input{
+        display: none;
+        }
+        #searchInput .location{
+          width: 50px;
+          height: 40px;
+      background-color: white;
+      color:black;
+      padding-left: 30px;
+      display: block;
+     border-radius: 20px;
+     margin-bottom: 10px;
+      }
+      #searchInput .searchButton{
+        display: block;
+        border-radius: 30px;
+        height: 30px;
+        width: 60px;
+        background-color: #E60965;
+        margin: 0 auto;
+        
+
+       }
+       .setButton{
+        border-radius: 20px;
+        height: 30px;
+        width: 60px;
+        color: white;
+        font-weight: 500;
+        background: #E60965;
+        position: absolute;
+        top: 72px;
+        right: 130px;
+       }
+       #header_search .ant-input{
+        width: 140px;
+        border-radius: 20px;
+        background-color: transparent;
+        
+        }
+        .list_location{
+          width: 300px;
+          height: 220px;
+          top: 45px;
+      border-radius: 20px;
+      right: 20px ;
+        }
+        .downshow_location{
+          width: 200px;
+          height: 100px;
+          background-color: white;
+              position: absolute;
+              bottom: 40px;
+              border-radius: 20px;
+              right:26px ;
+              padding-left: 20px;
+          }
+    }
+    @media (min-width: 641px ) and (max-width:1023px) {
+      .list_location{
+        width: 300px;
+        height: 200px;   
+      }
+    }
+    @media (min-width: 1024px){
+    }
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+}
+@layer components{
+  .utility{
+    @apply m-0 font-medium text-gray-500
+  }
+  .utility_del{
+    @apply  m-0 font-medium text-gray-500
+  }
+}
+body > iframe {
+  pointer-events: none;
+}

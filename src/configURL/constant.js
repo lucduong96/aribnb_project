@@ -1,0 +1,5 @@
+export const DOMAIN = "https://airbnb.cybersoft.edu.vn";
+export const TOKEN_CYBERSOFT =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5Mb3AiOiJCb290Y2FtcCAxOCIsIkhldEhhblN0cmluZyI6IjI0LzEwLzIwMjIiLCJIZXRIYW5UaW1lIjoiMTY2NjU2OTYwMDAwMCIsIm5iZiI6MTYzNzc3MzIwMCwiZXhwIjoxNjY2NzE3MjAwfQ.DWLvOaiIVlM3ruSxr9n9wTjFAhCxMgyw8spyqZIBrPE";
+export const TOKEN_ADMIN =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTdmNGQ3YzFkMjA5NjAwMWM1ZGY5M2QiLCJlbWFpbCI6InRodXlAZ21haWwuY29tIiwidHlwZSI6IkFETUlOIiwiaWF0IjoxNjUxMzk5NzQwfQ.73dI-qBef-LofJ975ZwrRWqynPHjcmVFdu5yDD2fXWk";

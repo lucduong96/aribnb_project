@@ -1,0 +1,1 @@
+export const SET_LIST_LOCATION = "SET_LIST_LOCATION";
