@@ -5,8 +5,8 @@ export default function AdminPriority() {
   const history = useHistory();
   return (
     <div className="flex flex-col justify-center items-center p-4">
-      <p>Email: binh97@gmail.com</p>
-      <p>password: binh97</p>
+      <p>Email:lucyber@gmail.com</p>
+      <p>password:123456</p>
       <button
         onClick={() => {
           history.push("/admin");
